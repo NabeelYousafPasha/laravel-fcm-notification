@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FireBasePushNotificationsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::view('create-fcm-token', 'push-notifications');
+Route::get('send-push-notification', [FireBasePushNotificationsController::class, 'sendNotificationToSingleUser']);
