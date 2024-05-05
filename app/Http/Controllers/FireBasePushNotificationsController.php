@@ -10,10 +10,10 @@ class FireBasePushNotificationsController extends Controller
     function sendNotificationToSingleUser()
     {
         try {
-            $serverKey = 'AAAA1xEyLFE:APA91bF-ZbHcLu5mUZ1hz13hD-RC0dXk7UAz7JuPeHG43OYD05mge5S17Ko5-FXux1HSkapG_SJPleYQMy91-cLvEPoxG9ITDrELjlagbdPjZOMpcvVpJ2DjBL_o9jW-L1pfYuBwLtlb';
-            $url = 'https://fcm.googleapis.com/fcm/send';
+            $serverKey = env('FCM_SERVER_KEY');
+            $url = env('FCM_URL');
             $notification = [
-                'to' => 'ceqINY-SznZl50IEk0AQD8:APA91bF5Oyuazb4jzs3xd2CqGlRyFlalGwmWSREVqvdfweU4Gy9JcMI9UFaxlcRVxiHEhk-7sLVa1_4u-7Bitum2R45SVrC31_kNpHi6zCYD2E9rl13V7AeabT_dTI52P68zPqYcAHnw',
+                'to' => 'cBJ0Vg9YF4U-_WctyagdjashgdjhsgdDw6fldZ:APA91bG-lruPybXawiJVZksbqeqda6hAmHGUCONm_EOOSjc9fF5Ga3WapDgRhc-QY6Oau5PjDqmMzZ5jpdPR-HZculTvEcgXFDyDrEgbslr9Sc6fS2xAkfHqezw9V-vHwGAQ5P12-D0z',
                 'notification' => [
                     'title' => 'Push Notification',
                     'body' => 'I am a push notification',

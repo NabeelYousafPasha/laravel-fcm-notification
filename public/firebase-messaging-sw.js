@@ -8,13 +8,13 @@ importScripts(
 );
 
 firebase.initializeApp({
-    apiKey: "BOue-tn3ekm88feUa3Gaz_RAcNlbBffo4jqPpfxVXjGIqoN1UvKFRSNl1HTgLosmdckWRCgCdBX3RqWEe1lIXRM",
-    authDomain: "pay4money-5e66d.firebaseapp.com",
-    projectId: "pay4money-5e66d",
-    storageBucket: "pay4money-5e66d.appspot.com",
+    apiKey: "AIzaSyDj9jhsdjsaPwfdC5WlXu4P9fYML2uyiblvzWXktM",
+    authDomain: "someapp-5e66d.firebaseapp.com",
+    projectId: "someapp-5e66d",
+    storageBucket: "someapp-5e66d.appspot.com",
     messagingSenderId: "923706469457",
-    appId: "1:923706469457:web:eb8d1cdaef61f747f2dc70",
-    measurementId: "G-9FXF8EJH4K"
+    appId: "1:923706469457:web:eb8dhsdgdh1cdaef61f747f2dc70",
+    measurementId: "G-9FXFsdghshd8EJH4K"
 });
 
 self.addEventListener('push', function (event) {
